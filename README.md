@@ -60,9 +60,8 @@ python network_visualization.py
 
 This will create:
 1. Static visualizations of ring, star, and complete topologies
-2. Animated GIFs showing DSGT convergence on each topology
-3. Communication cost analysis plots
-4. Theoretical convergence rate comparisons
+2. Communication cost analysis plots
+3. Theoretical convergence rate comparisons
 
 ## Experiment Parameters
 
@@ -91,8 +90,8 @@ The experiments track several key metrics:
 ### Expected Findings
 
 - **DSGT on Complete Graph**: Fastest convergence among DSGT variants
-- **DSGT on Star**: Moderately slower than complete graph (~1.4x)
-- **DSGT on Ring**: Slowest convergence (~2x slower than complete)
+- **DSGT on Star**: Moderately slower than complete graph
+- **DSGT on Ring**: Slowest convergence 
 - **FedAvg**: Similar performance across topologies, but vulnerable to server failures
 - **Robustness**: DSGT continues learning during server failures, FedAvg halts
 
@@ -128,9 +127,3 @@ pdflatex report.tex
 - The spectral gap analysis in `network_visualization.py` provides theoretical convergence rates
 - Animations help visualize the consensus process in DSGT
 - The communication cost analysis highlights the tradeoff between convergence speed and message overhead
-
-## References
-
-For more information on the algorithms and theory, refer to:
-- S. Pu and A. Nedić, "Distributed Stochastic Gradient Tracking Methods," Mathematical Programming, vol. 187, pp. 409-457, 2021.
-- H. B. McMahan et al., "Communication-Efficient Learning of Deep Networks from Decentralized Data," in Proc. AISTATS, 2017, pp. 1273-1282.

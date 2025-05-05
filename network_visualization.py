@@ -133,10 +133,6 @@ if __name__ == "__main__":
     # Create visualizations
     visualize_network_topologies()
     
-    # Skip animations since x_history isn't available
-    # for topology in ['ring', 'star', 'complete']:
-    #     animate_dsgt_convergence(results, topology)
-    
     # Communication cost analysis
     visualize_communication_cost()
     
