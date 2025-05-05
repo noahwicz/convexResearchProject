@@ -110,20 +110,3 @@ server_failure = (max_iter // 4, max_iter // 2)  # Start and end of failure peri
 ```
 
 To simulate link failures in DSGT, you can modify the mixing matrix W during iterations.
-
-## Report Generation
-
-To compile the LaTeX report:
-
-```bash
-pdflatex report.tex
-bibtex report
-pdflatex report.tex
-pdflatex report.tex
-```
-
-## Additional Notes
-
-- The spectral gap analysis in `network_visualization.py` provides theoretical convergence rates
-- Animations help visualize the consensus process in DSGT
-- The communication cost analysis highlights the tradeoff between convergence speed and message overhead
