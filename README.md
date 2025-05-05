@@ -1,4 +1,4 @@
-# convexResearchProject# Topology-Aware Distributed Optimization in Satellite Mesh Networks
+# Topology-Aware Distributed Optimization in Satellite Mesh Networks
 
 This repository contains code and experiments comparing Distributed Stochastic Gradient Tracking (DSGT) and Federated Averaging (FedAvg) algorithms across different network topologies.
 

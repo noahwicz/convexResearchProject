@@ -125,7 +125,7 @@ def compare_convergence_rates(N_range=range(4, 21, 4), save_dir='./'):
     plt.close()
 
 if __name__ == "__main__":
-    # Run the main experiment first to get results
+    # Run the main experiment first to get the results
     from distributed_optimization import run_experiment
     
     results = run_experiment(N=4, d=5, m=20, max_iter=100)

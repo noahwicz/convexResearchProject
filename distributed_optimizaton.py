@@ -244,7 +244,7 @@ def fedavg(A_list, b_list, K, eta, max_rounds, server_failure=None, w_star=None)
     loss_history.append(loss)
     x_history.append(w.copy())
     
-    # Main loop
+    # Main loop for function
     for t in range(max_rounds):
         # Check for server failure
         if server_failure and server_failure[0] <= t < server_failure[1]:
